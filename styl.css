@@ -1,0 +1,540 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0C0908;
+    color: white;
+    scroll-behavior: smooth;
+}
+.section1{
+    margin: 50PX;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.portfolio{
+    font-size: 30PX;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: palevioletred;
+    -webkit-text-stroke: .5px white;
+}
+.lien a{
+    margin-left: 25PX;
+    text-decoration: overline;
+    text-transform: capitalize;
+    font-size: 20PX;
+    transition: .5s ease;
+}
+.lien{
+    margin-right: 40PX;
+}
+.acceuil{
+    color: rgb(205, 92, 92);
+    font-weight: bolder;
+    font-size: 30PX;
+}
+.lien span{
+}
+.lien a:hover{
+    border: 0px solid palevioletred;
+    padding: 15PX 25PX;
+    box-shadow: 0 0 20PX palevioletred;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    /* color: palevioletred; */
+    color: white;
+    border-radius: 10PX;
+}
+.lien span:hover{
+    box-shadow: none;
+    transition: .5s ease;
+}
+.section2{
+    margin: 130PX 55PX;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120PX;
+
+}
+.gauche{
+    transition: .5s ease;
+    animation: ani 6s infinite ease;
+
+}
+.gauche span{
+    font-size: 49PX;
+    text-transform: capitalize;
+    color: palevioletred;
+    font-weight: bold;
+}
+.gauche h2{
+    margin: 10PX 0;
+    text-transform: capitalize;
+
+}
+.desciption{
+    border: 1px solid white;
+    position: relative;
+}
+.gauche p{
+    margin: 10PX 0;
+    /* font-size: PX; */
+    /* font-weight: bold; */
+}
+@keyframes ani{
+    0%{
+        filter: blur(10PX);
+        transform: translateY(150PX);
+        opacity: 0;
+    }
+    100%{
+        filter: blur(0);
+        transform: translateY(0);
+        transition: .5s ease;
+        opacity: 1;
+    }
+}
+.droite{
+    /* background-color: red; */
+    width: 340PX;
+    /* transform: translate(50PX,-50PX); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 460PX;
+    border: 2PX solid transparent;
+    transform: translate(100PX,-40PX);
+    border-radius: 20PX 2PX 10PX 150PX;
+    object-fit: cover;
+    overflow: hidden;
+    animation: anit 8s linear infinite;
+    position: relative;
+    top: 5px;
+    right: -10PX;
+    /* box-shadow: -10PX -10PX 7PX pink; */
+    mix-blend-mode: lighten;
+    
+}
+@keyframes anit{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        top: 20PX;
+        right: 10PX;
+        opacity:1;
+    }
+    /* 50%{
+        right: 60PX;
+        top: 10PX;
+    } */
+     /* 0%{
+        opacity: 0; */
+        
+        /* transform: rotateX(120deg); */
+        /* } */
+        /* 100%{
+            opacity: 1;
+            /* right: 50PX;
+            top: 10PX; */
+        /* } */
+
+}
+.image{
+            background-image: url('simple.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10PX 2PX 10PX 150PX;
+    mix-blend-mode: lighten;
+    width: 400PX;
+    /* transform: translate(50PX,-50PX); */
+    height: 460PX;
+    
+    
+}
+.gauche button{
+    padding: 15PX 35PX;
+    text-transform: capitalize;
+    font-size: 16PX;
+    font-weight: bold;
+    margin: 20PX 0;
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 10PX;
+    transition: .5s ease;
+    color: black;
+}
+.gauche button:hover{
+    border:2px dashed palevioletred;
+    background-color: transparent;
+    transition: .5s ease;
+    color: white;
+    box-shadow: -2PX  3PX 8PX pink;
+    /* color: black; */
+
+}
+.desciption{
+    width: 155PX;
+    text-align: center;
+    background-color: transparent;
+    transform: translate(539PX,-299PX);
+}
+.desciption i{
+    color: rgb(205, 92, 92);
+    /* display: flex; */
+    /* padding: 30PX; */
+    
+}
+/* .logo{
+    display: flex;
+} */
+.logo{
+    padding: 10PX;
+
+}
+.logo i{
+    padding: 12PX;
+    border: 1px solid dashed;
+    border-radius: 50%;
+    color: palevioletred;
+}
+.logo i:hover{
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 50%;
+    transition: .5s ease;
+    color: black;
+}
+.sectiontrace{
+     /* background-color: RED; */
+    /* width: 1000PX; */
+    /* height: 500PX; */
+    text-align: center;
+    position: absolute;
+    top: 800PX;
+    width: 100%;
+
+}
+.sectiontrace h1{
+    color:rgb(205, 92, 92);
+
+}
+.sectiontrace i{
+    color: palevioletred;
+    width: 100PX;
+    /* width: 100PX; */
+}
+.section3{
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: 36PX;
+    /* margin: 50PX; */
+}
+.about{
+    color: white;
+    width: 100%;
+    height: 100%;
+    
+}
+.about span{
+    color: palevioletred;
+    font-size: 45PX;
+    
+}
+.about .a{
+    font-size: 90PX;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.lagrid h4{
+    font-size: 20PX;
+    text-transform: capitalize;
+    padding: 6PX;
+    transition: .5s ease;
+    animation: animat 2s infinite ease;
+}
+.lagrid h4:hover{
+    transition: .5s ease;
+    transform: translate(10PX);
+}
+
+/* @keyframes animat{
+    100%{
+     
+    }
+} */
+.lagrid{
+    margin: 30PX 0;
+    border: 1PX solid;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    box-shadow: 0 0 3PX pink;
+}
+.lagrid span{
+    font-weight: 60;
+    color: rgba(255, 192, 203, 0.534);
+}
+.div3 .lang{
+    color: palevioletred;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 30PX;
+}
+.language{
+    display: block;
+    padding: 10PX;
+}
+.language i{
+    margin-left: 20PX;
+
+}
+.language h2:hover{
+    transition: .5s ease;
+    transform: translate(10PX);
+}
+.div3 .py span i{
+    color: rgba(0, 0, 255, 0.34);
+}
+.div3 .js span i{
+    color: rgba(255, 255, 0, 0.596);
+}
+.div3 .sql span i{
+    color: rgba(0, 128, 0, 0.824);
+}
+.retour{
+    border: 1PX solid;
+    background-color: pink;
+    box-shadow: 0 0 8PX palevioletred;
+    color: black;
+    width: 100PX;
+    height: 30PX;
+    margin-top: 10PX;
+    text-align: center;
+    /* padding: 10PX; */
+}
+.retour a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: transparent;
+}
+.retour i{
+    color: white;
+}
+.section4 {
+    margin: 90PX;
+    text-align: center;
+
+}
+.section4 h1{
+    text-align: center;
+    /* font-size: PX; */
+    font-weight: bold;
+}
+.section4 h1 span{
+    color: rgb(205, 92, 92);
+    font-size: 100PX;
+    /* margin: 100PX 0; */
+}
+.mere{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30PX 0;
+    gap: 20PX;
+
+}
+.pre{
+    /* border: 1px solid; */
+    width: 300PX;
+    height: 200px;
+    border-radius: 10PX;
+    box-shadow: 0 0 6PX;
+
+}
+/* .pre i:hover{
+    background-color: transparent;
+    /* color: white; */
+
+
+/* .pre:hover{
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 10PX;
+    transition: .5s ease;
+    color: black !important;
+} */
+.pre h1{
+    color: palevioletred;
+    text-transform: capitalize;
+    font-size: 30PX;
+    margin: 10PX 0;
+}
+.pre i{
+    font-size: 40PX;
+    margin: 20PX 0;
+    /* background-color: white; */
+    color: white;
+}
+.first p,.first h1{
+    color: black !important;
+    background-color: transparent;
+}
+.first{
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 10PX;
+    transition: .5s ease;
+    color: black;
+}
+.pre p{
+    color: white;
+}
+.pre:hover{
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 10PX;
+    transition: .5s ease;
+    color: black !important;
+}
+.pre i,.pre p, .pre h1{
+    background-color: transparent;
+}
+.section5 h1 span{
+    color: rgb(205, 92, 92);
+    font-size: 90PX;
+}
+.section5 h1{
+    margin: 20PX 50PX;
+}
+
+
+.section5{
+    margin: 50PX;
+    text-align: center;
+}
+.meslogos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.logo1 i{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 20PX;
+    margin-bottom: 20PX;
+    transition: .5s ease;
+}
+.logo1 i{
+    background-color: pink;
+    border: none;
+    box-shadow: -2PX  3PX 8PX pink;
+    border-radius: 50%;
+    transition: .5s ease;
+    color: black;
+}
+.logo1 i:hover{
+    color: palevioletred;
+    border: 1px solid;
+    transition: .5s ease;
+    background-color: transparent;
+    box-shadow: none;
+}
+.section6{
+    margin: 30PX 150PX;
+    /* width: 350px;
+    height: 300PX; */
+    background-color: red;
+}
+/* .form{
+    width: 1000px;
+    height: 400PX;
+    background-color: green;
+} */
+.lesdeux{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30PX 0;
+    gap: 10PX;
+}
+.lesdeux input{
+    padding: 15PX;
+    border-radius: 20PX;
+    border: 1px solid;
+    box-shadow: 2PX 4PX 5PX pink;
+}
+.inputseul input{
+    border-radius: 20PX;
+    padding: 15PX;
+    width: 100%;
+    /* margin: 30PX 0; */
+    box-shadow: 2PX 2PX 5PX pink;
+}
+.message textarea{
+    border-radius: 20PX;
+    padding: 20PX;
+    width: 100%;
+    height: 100PX;
+    margin: 30PX 0;
+
+    box-shadow: 2PX 4PX 5PX pink;
+}
+.lesbtn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* justify-content: space-between */
+
+}
+.lesbtn button{
+    width: 90PX;
+    border: 1px solid transparent;
+    background-color: pink;
+    color: black !important;
+    box-shadow: -2PX  3PX 8PX pink;
+    height: 40PX;
+    transition: all .5s ease;
+    border-radius: 10PX;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20PX;
+
+
+}
+.lesbtn button:hover{
+    transition: all .5s ease;
+    background-color: transparent;
+    border: 1px solid palevioletred;
+    color: palevioletred !important;
+}
+.lesbtn button i:hover{
+    background-color: transparent;
+    color: palevioletred;
+}
+.lesbtn button i{
+    background-color: transparent;
+    color: black;
+}
+::placeholder{
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.lesbtn button a:hover{
+    background-color: transparent;
+    color: palevioletred;
+}
+.lesbtn button a{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
