@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #0C0908;
+    background-color: #0c0908f0;
     color: white;
     scroll-behavior: smooth;
 }
@@ -37,8 +37,7 @@
     font-weight: bolder;
     font-size: 30PX;
 }
-.lien span{
-}
+
 .lien a:hover{
     border: 0px solid palevioletred;
     padding: 15PX 25PX;
@@ -58,7 +57,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 120PX;
-
+    /* width: 300PX; */
 }
 .gauche{
     transition: .5s ease;
@@ -145,15 +144,18 @@
 
 }
 .image{
-            background-image: url('simple.jpg');
+    background-image: url('image3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10PX 2PX 10PX 150PX;
     mix-blend-mode: lighten;
     width: 400PX;
+    box-shadow: -2PX  3PX 8PX pink;
+
     /* transform: translate(50PX,-50PX); */
     height: 460PX;
+    border: 7px solid white;
     
     
 }
@@ -536,5 +538,66 @@
     text-decoration: none;
     background-color: transparent;
     color: black;
+}
+.menu{
+    position: absolute;
+    right: 50PX;
+    top: 40PX;
+    font-size: 30PX;
+
+}
+@media screen and (max-width: 500PX){
+    .menu{
+        display: block;
+
+    }
+    .lien{
+        position:absolute;
+        top: 100PX;
+        display: flex;
+        flex-direction: column;
+        /* right: 50PX; */
+        justify-content: center;
+        align-items: center;
+        width: 200PX;
+        border: 2PX solid;
+        background-color: rgba(255, 255, 255, 0.164);
+        height: 250PX;
+        border-radius: 10PX;
+        z-index: 99;
+        backdrop-filter: blur(700PX);
+        text-align: center;
+        transform: translateX(1000PX);
+
+        
+
+        /* min-height: 100vh; */
+    }
+
+    .lien a , .lien a span {
+        text-decoration: none;
+        background-color: transparent;
+        margin-top: 20PX;
+        z-index: 9;
+    }
+    .section2{
+        /* width: 100PX; */
+        display: grid;
+
+        grid-template-columns: repeat(2,1fr);
+    }
+    .gauche span{
+        font-size: 30PX;
+    }
+    .gauche{
+        width: 100PX;
+    }
+    .portfolio{
+        font-size: 15PX;
+    }
+    .droite{
+        /* width: 100PX; */
+    }
+    
 }
 
